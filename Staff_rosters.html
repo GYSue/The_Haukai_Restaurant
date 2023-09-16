@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset= "utf-8">
+    <title>Staff_rosters</title>
+    <link rel=”preconnect” href=”https://fonts.gstatic.com” crossorigin>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<header class="w3-container w3-teal">
+    <h1>Haukai Restaurant</h1>
+  </header>
+    <nav class="w3-bar w3-black w3-card-4 w3-padding-16">
+        <a href="home.html" class="w3-bar-item w3-button">Home</a>
+            <a href="reservations.html" class="w3-bar-item w3-button">Reservations</a>
+            <a href="Opening_hours.html" class="w3-bar-item w3-button">Opening hours</a>
+            <a href="contact_us.html" class="w3-bar-item w3-button">Contact us</a>
+            <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+            <a href="Media.html" class="w3-bar-item w3-button">Media</a>
+            <a href="Gift_Vouchers.html" class="w3-bar-item w3-button">Gift Vouchers</a>
+       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+     
+     <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+       <a href="home.html" class="w3-bar-item w3-button padding-16">Home</a>
+            <a href="reservations.html" class="w3-bar-item w3-button padding-16">Reservations</a>
+            <a href="Opening_hours.html" class="w3-bar-item w3-button padding-16">Opening hours</a>
+            <a href="contact_us.html" class="w3-bar-item w3-button padding-16">Contact us</a>
+            <a href="menus.html" class="w3-bar-item w3-button padding-16">Menus</a>
+            <a href="Media.html" class="w3-bar-item w3-button padding-16">Media</a>
+            <a href="Gift_Vouchers.html" class="w3-bar-item w3-button padding-16">Gift Vouchers</a></div>
+       </nav>
+<h2>Staff Login</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="https://c.pxhere.com/images/3e/d7/e640d11221826a3085b723833c3e-1460899.jpg!d" 
+    srcset="https://c.pxhere.com/images/3e/d7/e640d11221826a3085b723833c3e-1460899.jpg!d" alt="Staff">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+<!-- And here is our main footer that is used across all the pages of our website -->
+<footer class="w3-container w3-teal">
+  <p> &copy; Copyright 2023 by Haukai Restaurant.</p>
+</footer>
+
+</html>

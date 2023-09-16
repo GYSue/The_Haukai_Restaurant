@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta charset= "utf-8">
+     <title>Haukai Restaurant homepage</title>
+     <link rel=”preconnect” href=”https://fonts.gstatic.com” crossorigin>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <style>
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border-style:groove;  
+      }
+      p{
+       font-size: large;
+      }
+      a:hover {
+      color: red;
+      }
+     </style> 
+   </head>
+ <body>
+     <!-- Here is our main header that is used across all the pages of our website -->
+     <header class="w3-container w3-teal">
+       <h1>Haukai Restaurant</h1>
+     </header>
+     <nav class="w3-bar w3-black w3-card-4 w3-padding-16 center">
+      <a href="home.html" class="w3-bar-item w3-button">Home</a>
+          <a href="reservations.html" class="w3-bar-item w3-button">Reservations</a>
+          <a href="Opening_hours.html" class="w3-bar-item w3-button">Opening hours</a>
+          <a href="contact_us.html" class="w3-bar-item w3-button">Contact us</a>
+          <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+          <a href="Media.html" class="w3-bar-item w3-button">Media</a>
+          <a href="Gift_Vouchers.html" class="w3-bar-item w3-button">Gift Vouchers</a>
+     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+   
+   <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium center">
+     <a href="home.html" class="w3-bar-item w3-button padding-16">Home</a>
+          <a href="reservations.html" class="w3-bar-item w3-button padding-16">Reservations</a>
+          <a href="Opening_hours.html" class="w3-bar-item w3-button padding-16">Opening hours</a>
+          <a href="contact_us.html" class="w3-bar-item w3-button padding-16">Contact us</a>
+          <a href="menus.html" class="w3-bar-item w3-button padding-16">Menus</a>
+          <a href="Media.html" class="w3-bar-item w3-button padding-16">Media</a>
+          <a href="Gift_Vouchers.html" class="w3-bar-item w3-button padding-16">Gift Vouchers</a></div>
+     </nav>
+   
+   <script>
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+
+   <img src= https://www.newshub.co.nz/home/lifestyle/2018/10/modern-m-ori-fusion-restaurant-p-h-p-keh-finds-new-auckland-home/_jcr_content/par/image.dynimg.full.q75.jpg/v1539836157909/puha-pakeha-food-table-supplied-1120.jpg 
+   alt="Maori kai" style="width:50%;">
+
+     <main class="w3-container w3-white">
+       <div class="w3-row">
+         <div class="w3-container">
+         
+           <h2><b>About us</b></h2>
+           <p>Welcome to Haukai Restaurant!<br>
+            Here is a place specialised in Māori kai and full of Maori features. The restaurant is based in the Bay of Islands.<br>
+            It was started by a couple who are keen on creating a business that would appeal to locals and tourists 
+            visiting the area.<br>
+            The owners also want customers to experience Te Ao Māori with the use of karakia for 
+            blessing food and other Māori culture elements.</p>
+           <p><a href="Staff_rosters.html">Staff Rosters</a></p>
+          </div>
+       </div>
+     </main>
+<!-- And here is our main footer that is used across all the pages of our website -->
+<footer class="w3-container w3-teal">
+<p> &copy; Copyright 2023 by Haukai Restaurant.</p>
+</footer> 
+</body>
+</html>
